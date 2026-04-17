@@ -22,11 +22,11 @@ public class ChaseMovement : MonoBehaviour
 
         Vector3 current = transform.position;
         Vector3 destination = target.position;
-        destination.z = current.z; // Keep current Z for 2D scenes
 
-        float distance = Vector3.Distance(current, destination);
-        if (distance <= stoppingDistance) return;
+        Vector3 toTarget = destination - current;
+        if (toTarget.sqrMagnitude <= stoppingDistance * stoppingDistance) return;
 
-        transform.position = Vector3.MoveTowards(current, destination, moveSpeed * Time.deltaTime);
+        Vector3 direction = toTarget.normalized;
+        transform.position = current + direction * (moveSpeed * Time.deltaTime);
     }
 }
