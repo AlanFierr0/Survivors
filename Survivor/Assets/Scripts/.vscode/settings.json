@@ -1,0 +1,24 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "Enemy.cs.meta": true,
+        "Health.cs.meta": true,
+        "JoystickToPlayerMovement.cs.meta": true,
+        "PlayerMovement.cs.meta": true,
+        "IHealth.cs.meta": true,
+        "MeleeEnemy.cs.meta": true
+    },
+    "hide-files.files": [
+        "Enemy.cs.meta",
+        "Health.cs.meta",
+        "JoystickToPlayerMovement.cs.meta",
+        "PlayerMovement.cs.meta",
+        "IHealth.cs.meta",
+        "MeleeEnemy.cs.meta",
+        "ChaseMovement.cs.meta"
+    ]
+}
